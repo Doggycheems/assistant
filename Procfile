@@ -1,1 +1,1 @@
-worker:python -m assistant
+worker: python -m assistant
