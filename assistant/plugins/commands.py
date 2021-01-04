@@ -151,15 +151,15 @@ async def ex(_, message: Message):
 
 
 OT = [
-    "This argument is off-topic and not related to Pyrogram. Please, move the discussion to @PyrogramLounge",
-    "Looks like this topic is related to Pyrogram. You can discuss at @PyrogramChat"
+    "Ciao, sono un bot di testing di @doggy_cheems basato sull'assistente di pyrogram",
+    "Ciao, sono un bot di testing di @doggy_cheems basato sull'assistente di pyrogram"
 ]
 
 
 @Assistant.on_message(command("ot"))
 async def ot(_, message: Message):
     """offtopic conversation"""
-    answer = OT[0] if message.chat.id == -1001387666944 else OT[1]  # @PyrogramChat id
+    answer = OT[0] if message.chat.id == -1001365241909 else OT[1]
     await reply_and_delete(message, answer)
 
 
